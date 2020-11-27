@@ -1,0 +1,279 @@
+/* Global*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    letter-spacing: 1px;
+}
+
+li {list-style-type: none;}
+
+a {text-decoration: none;}
+
+h1 {font-size: 64px;}
+h2 {font-size: 56px;}
+h3 {font-size: 48px;}
+h4 {font-size: 40px;}
+h5 {font-size: 32px;}
+h6 {font-size: 24px;}
+
+
+
+/* Body */
+body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Lines */
+.line1 {
+    width: 100%;
+}
+
+.line-pink {
+    border-bottom: 2px solid #ff0076;
+    margin: 104px 0 0 16.6%;
+}
+
+.line-violet {
+    border-bottom: 2px solid #4003ca;
+    margin: 147px 0 0 16.6%;
+}
+
+.line-teal {
+    border-bottom: 2px solid #33ffd9;
+    margin-left: 16.6%;
+}
+
+/* Navbar */
+header {
+    border-bottom: 1px solid white;
+}
+
+.header__inside {
+    margin: 25px 16.6% 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__item {
+    margin-right: 50px;
+   padding-bottom: 5px;
+   font-weight: 700;
+}
+
+.nav__item_1 {
+    border-bottom: 4px solid #ff0076;
+}
+
+.nav__item_2 {
+    border-bottom: 4px solid #ff9300;
+}
+
+.nav__item_3 {
+    background-image: linear-gradient(90deg,#4003ca 50%,#33ffd9 50%);
+    background-size: 100% 4px; 
+    background-position: bottom; 
+    background-repeat: no-repeat;
+}
+
+/* Home */
+.home {
+    margin: 57px 16.6% 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home>h3 {
+    width: 50%;
+}
+
+/* Start */
+.start {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 16.6% 207px;    
+}
+
+/* Levels */
+.hgroup1 {
+    margin: 96px 16.6% 60px;
+    width: 863px;
+}
+
+.hgroup2 {
+    margin: 96px 16.6% 60px;
+    width: 641px;
+}
+
+.level__title {
+    font-weight: 700;
+}
+
+.level__number {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    color: #ff0076;
+    margin: 20px 0 30px;
+}
+
+.level__paragraph {
+    font-weight: 400;
+}
+
+.level__images {
+    display: flex;
+    margin: 0 16.6%;
+}
+
+/* Level 1 */
+.character__inside {
+    margin-right: 103px;
+}
+
+.character__inside>h6 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff0076;
+    margin: 16px 0 0 38.98px;
+}
+
+/* Level 2 */
+.learningSkills {
+    margin-top: 40px;
+}
+
+/* Level 3 */
+.improveSkills {
+    margin-top: -20px;
+}
+
+/* Level 4 */
+.finalRound {
+    margin-top: 65px;
+}
+
+/* E-mail */
+.email {
+    margin: 0 16.6%;
+    display: flex;
+    margin-top: 201px;
+    width: 1150px;
+}
+
+.email>h1 {
+    font-size: 96px;
+    color: #ff0076;
+}
+
+.email__zone {
+    border-left: 2px solid  #ff0076;
+    margin-left: 107px;
+    padding-left: 100px;
+}
+
+.email__form {
+    margin-top: 60px;
+    display: flex;
+}
+
+.email__form>input {
+    background: rgba(255, 0, 118, 0.53);
+    border: 0;
+    outline: 0;
+    color: #ff0076;
+    width: 325px;
+    height: 39px;
+    margin-right: 25px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.email__form>input::placeholder {
+    color: #ff0076;
+    font-size: 18px;
+}
+
+.email__form>button {
+    background-color: #ff0076;
+    border: 0;
+    width: 143px;
+    height: 39px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 96px;
+}
+
+.footer__left {
+    background-color: #33FFD9;
+    width: 56.51%;
+    height: 492px;
+}
+
+.footer__right {
+    background-color: #4003CA;
+    width: 43.49%;
+    height: 492px;
+}
+
+
+/* Footer TextLeft */
+.footer__textLeft {
+    display: flex;
+    margin: 162px 0 0 322px;
+    width: 674px;
+    height: 249px;   
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+
+td, td>h6, table span {
+    color: #4003CA;
+}
+
+table span {
+    font-weight: 700;
+}
+
+/* Footer TextRight */
+.footer__textRight {
+    position: relative;
+    margin: 162px 0 0 76px;
+    width: 434px;
+    height: 249px;  
+}
+
+.footer__textRight h6 {
+    color: #33FFD9;
+}
+
+.footer__textRight>img[src="img/We.png"] {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
