@@ -28,7 +28,7 @@ body {
 }
 
 /* Lines */
-.line1 {
+.line {
     width: 100%;
 }
 
@@ -272,7 +272,7 @@ table span {
     color: #33FFD9;
 }
 
-.footer__textRight>img[src="img/We.png"] {
+.we-icon {
     position: absolute;
     right: 0;
     bottom: 0;
