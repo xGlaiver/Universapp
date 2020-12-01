@@ -28,8 +28,12 @@ body {
 }
 
 /* Lines */
-.line {
+.line-violet {
     width: 100%;
+    position: absolute;
+    top: 400px;
+    border-top: 2px solid #4003ca;
+    z-index: -1;
 }
 
 .line-pink {
@@ -37,24 +41,14 @@ body {
     margin: 104px 0 0 16.6%;
 }
 
-.line-violet {
-    border-bottom: 2px solid #4003ca;
-    margin: 147px 0 0 16.6%;
-}
-
 .line-teal {
     border-bottom: 2px solid #33ffd9;
-    margin-left: 16.6%;
+    /*margin-left: 16.6%;*/
 }
 
 /* Navbar */
-header {
-    border-bottom: 1px solid white;
-}
-
 .header__inside {
-    margin: 25px 16.6% 0;
-    padding-bottom: 20px;
+    margin: 25px 16.20% 0 16.61%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,21 +57,23 @@ header {
 
 .nav__list {
     display: flex;
-    justify-content: space-around;
 }
 
 .nav__item {
-    margin-right: 50px;
-   padding-bottom: 5px;
-   font-weight: 700;
+    margin-left: 50px;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-align: center;
 }
 
 .nav__item_1 {
     border-bottom: 4px solid #ff0076;
+    width: 117px;
 }
 
 .nav__item_2 {
     border-bottom: 4px solid #ff9300;
+    width: 123px;
 }
 
 .nav__item_3 {
@@ -85,74 +81,145 @@ header {
     background-size: 100% 4px; 
     background-position: bottom; 
     background-repeat: no-repeat;
+    width: 158px;
+    padding-bottom: 9px;
 }
 
 /* Home */
 .home {
-    margin: 57px 16.6% 49px;
+    margin: 48px 16.20% 49px 15%;
+    height: 497px;
+    border-radius: 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(97.04deg, black 40%, #4003ca 110%);
+    box-shadow: -5px 1px 31px #4003CA;
 }
 
-.home>hgroup {
+.home__images, .home__words {
     width: 50%;
+    
 }
 
-/* Start */
-.start {
+.home__images {
     display: flex;
-    justify-content: space-between;
-    margin: 70px 16.6% 207px;    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("/img/GridPurple.png"), linear-gradient(to top,  rgba(0, 0, 0, 0) 30%, #33FFD9 110%);
+    border-radius: 50px 0 0 50px;
+}
+
+.arcade-left {
+    margin-right: 31px;
+}
+
+.arcade-left, .arcade-right {
+    width: 40%;
+}
+
+.home__words {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-radius: 0 40px 40px 0;
+    width: 52.69%;
+}
+
+.home hgroup {
+    margin-left: 70px;
+    margin-right: 108px;
+    width: 1000px;
+}
+
+.home hgroup>h3 {
+    font-size: 2.4vw;
+}
+
+.home hgroup>h6 {
+    font-size: 1.2vw;
+    font-weight: 400;
 }
 
 /* Levels */
-.hgroup1 {
-    margin: 96px 16.6% 60px;
-    width: 863px;
+.level__number {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ff0076;
+    margin: 65px 0 20px 16%;
 }
 
-.hgroup2 {
-    margin: 96px 16.6% 60px;
-    width: 641px;
+.level {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    height: 390px;
+    margin: 0 26.15% 0 15%;
+    border-radius: 40px;
+}
+
+hgroup {
+    width: 409px;
+    margin: 0 64px 0 41px;
 }
 
 .level__title {
+    font-size: 56px;
     font-weight: 700;
-}
-
-.level__number {
-    font-family: 'Press Start 2P', cursive;
-    font-weight: 400;
-    color: #ff0076;
-    margin: 20px 0 30px;
+    width: 110%;
+    margin-top: 52px;
 }
 
 .level__paragraph {
     font-weight: 400;
+    font-size: 18px;
 }
 
 .level__images {
     display: flex;
-    margin: 0 16.6%;
+}
+
+.level__left {
+    width: 637px;
+}
+
+.level__right {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin-right: 40px;
 }
 
 /* Level 1 */
 .character__inside {
-    margin-right: 103px;
+    margin-right: 56px;
 }
 
-.character__inside>h6 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
-    font-weight: 400;
-    color: #ff0076;
-    margin: 16px 0 0 38.98px;
+.level_1 {
+    background: linear-gradient(97.04deg, #000000 38.39%, #2000B4 106.58%);
+    box-shadow: -5px 1px 31px #2000B4;
 }
+
+.level__right1 {
+    background-image: url("/img/GridBlue.png");
+}
+
 
 /* Level 2 */
 .learningSkills {
     margin-top: 40px;
+}
+
+.level_2 {
+    background: linear-gradient(97.04deg, #000000 38.39%, #FF0076 106.58%);
+    box-shadow: -5px 1px 31px #FF0076;
+}
+
+.level__right2 {
+    background-image: url("/img/GridPink.png");
 }
 
 /* Level 3 */
@@ -160,7 +227,25 @@ header {
     margin-top: -20px;
 }
 
+.level_3 {
+    background: linear-gradient(97.04deg, #000000 38.39%, #33FFD9 106.58%);
+    box-shadow: -5px 1px 31px #33FFD9;
+}
+
+.level__right3 {
+    background-image: url("/img/GridTeal.png");
+}
+
 /* Level 4 */
+.level_4 {
+    background: linear-gradient(274.78deg, #2000B4 0.25%, #000000 69.94%);
+    box-shadow: -5px 1px 31px #2000B4;
+}
+
+.level__right4 {
+    background-image: url("/img/GridBlu.png");
+}
+
 .finalRound {
     margin-top: 65px;
 }
@@ -187,20 +272,21 @@ header {
 
 /* E-mail */
 .email {
-    margin: 0 16.6%;
+    margin: 0 15%;
     display: flex;
-    margin-top: 201px;
+    margin-top: 120px;
     width: 1150px;
 }
 
 .email>h1 {
-    font-size: 96px;
+    font-size: 100px;
+    font-weight: 900;
     color: #ff0076;
 }
 
 .email__zone {
     border-left: 2px solid  #ff0076;
-    margin-left: 107px;
+    margin-left: 75px;
     padding-left: 100px;
 }
 
@@ -242,27 +328,26 @@ footer {
     display: flex;
     flex-direction: row;
     margin-top: 96px;
+    height: 338px;
 }
 
 .footer__left {
     background-color: #33FFD9;
-    width: 56.51%;
-    height: 492px;
+    width: 43.33%;
 }
 
 .footer__right {
     background-color: #4003CA;
-    width: 43.49%;
-    height: 492px;
+    width: 56.67%;
 }
 
 
 /* Footer TextLeft */
 .footer__textLeft {
     display: flex;
-    margin: 162px 0 0 322px;
-    width: 674px;
-    height: 249px;   
+    margin: 65px 0 0 292px;
+    width: 374px;
+  
 }
 
 table {
@@ -282,13 +367,14 @@ table span {
 /* Footer TextRight */
 .footer__textRight {
     position: relative;
-    margin: 162px 0 0 76px;
-    width: 434px;
-    height: 249px;  
+    margin: 65px 0 0 288px;
+    width: 530px;
+    height: 200px;
 }
 
 .footer__textRight h6 {
     color: #33FFD9;
+    width: 500px;
 }
 
 .we-icon {

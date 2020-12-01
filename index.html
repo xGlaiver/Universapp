@@ -24,11 +24,11 @@
     <!----------------- Navbar ----------------->
     <header>
         <div class="header__inside">
-            <a href="index.html"><img src="https://i.ibb.co/QbvtNTM/logo.png" alt="Logo"></a>
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
             <nav>
                 <ul class="nav__list">
                     <li><a href="#" class="nav__item nav__item_1">PERCORSI</a></li>
-                    <li><a href="#" class="nav__item nav__item_2">PRICING </a></li>
+                    <li><a href="#" class="nav__item nav__item_2">PRICING</a></li>
                     <li><a href="#" class="nav__item nav__item_3">SIGN_UP / LOG_IN</a></li>
                 </ul>
             </nav>
@@ -39,91 +39,106 @@
     <main>
         <!----------------- Home ----------------->
         <section class="home">
-            <img src="https://i.ibb.co/85jVZMf/Arcade.png" alt="Arcade">
-            <hgroup>
-                <h3>Diventa un Digital Hero</h3>
-                <h6>Studia, pratica e scopri un mondo di opportunit&aacute;. Inizia ora la tua avventura.</h6>
-            </hgroup>     
+            <div class="home__images">
+                <img class="arcade-left" src="img/ArcadeLeft.png" alt="Arcade-Left">
+                <img class="arcade-right" src="img/ArcadeRight.png" alt="Arcade-Right">
+            </div>
+            <div class="home__words">
+                <hgroup>
+                    <h3>Diventa un Digital Hero</h3>
+                    <h6>Studia, pratica e scopri un mondo di opportunit&aacute;. Inizia ora la tua avventura.</h6>
+                </hgroup>     
+            </div>         
         </section>
-        <img class="line" src="https://i.ibb.co/NxJ739z/Line.png" alt="Line">
-
-        <!----------------- Start ----------------->
-        <section class="start">
-            <h1>START <img src="https://i.ibb.co/7y4c79h/mini-heart.png" alt="Mini-Heart"></h1>
-        </section>
+        <div class="line-violet"></div>
 
         <!----------------- Levels ----------------->
         <!-- Level 1 -->
-        <section class="level">
-            <hgroup class="hgroup1">
-                <h1 class="level__title">CHOOSE YOUR CHARACTER</h1>
-                <h6 class="level__number">Level 1</h6>
-                <h6 class="level__paragraph">Inizia il tuo cammino e definisci il tipo di eroe che vuoi diventare. Pensi di essere un mago del codice, un paladino del design o un guerriero del marketing?</h6>
-            </hgroup>
-            <div class="level__images">
-                <div class="character__inside">
-                    <img src="https://i.ibb.co/7WFyw51/Developer.png" alt="Developer">
-                    <h6>Ready to play</h6>
-                </div>
-                <div class="character__inside">
-                    <img src="https://i.ibb.co/vBmFFsM/Designer.png" alt="Designer">
-                    <h6>Locked</h6>
-                </div>
-                <div class="character__inside">
-                    <img src="https://i.ibb.co/pK3gQX0/Marketer.png" alt="Marketer">
-                    <h6>Locked</h6>
+        <h1 class="level__number">Level 1</h1>
+        <section class="level level_1">
+            <div class="level__left">
+                <hgroup>
+                    <h3 class="level__title">CHOOSE YOUR CHARACTER</h3>
+                    <p class="level__paragraph">Inizia il tuo cammino e definisci il tipo di eroe che vuoi diventare. Pensi di essere un mago del codice, un paladino del design o un guerriero del marketing?</p>
+                </hgroup>
+            </div>
+            <div class="level__right level__right1">
+                <div class="level__images">
+                    <div class="character__inside">
+                        <img src="img/Developer.png" alt="Developer">
+                        <h6>Ready to play</h6>
+                    </div>
+                    <div class="character__inside">
+                        <img src="img/Designer.png" alt="Designer">
+                        <h6>Locked</h6>
+                    </div>
+                    <div class="character__inside">
+                        <img src="img/Marketer.png" alt="Marketer">
+                        <h6>Locked</h6>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="line-pink"></div>
+        <!--<div class="line-pink"></div> -->       
         <!-- Level 2-->
-        <section class="level">
-            <hgroup class="hgroup2">
-                <h1 class="level__title">LEARNING SKILLS</h1>
-                <h6 class="level__number">Level 2</h6>
-                <h6 class="level__paragraph">Acquisisci le conoscenze necessarie per proseguire nel tuo cammino. Segui i video corsi, impara la teoria e preparati al prossimo livello.
-                </h6>
-            </hgroup>
-            <div class="level__images">
-                <img class="learningSkills" src="https://i.ibb.co/n88jnw0/Learning-Skills.png" alt="Learning-Skills">
+        <h1 class="level__number">Level 2</h1>
+        <section class="level level_2">
+            <div class="level__left">
+                <hgroup class="hgroup2">
+                    <h1 class="level__title">LEARNING SKILLS</h1>
+                    <p class="level__paragraph">Acquisisci le conoscenze necessarie per proseguire nel tuo cammino. Segui i video corsi, impara la teoria e preparati al prossimo livello.
+                    </p>
+                </hgroup>
             </div>
-            <div class="line-violet"></div>
+            <div class="level__right level__right2">
+                <div class="level__images">
+                    <img class="learningSkills" src="img/LearningSkills.png" alt="Learning-Skills">
+                </div>
+            </div>   
         </section>
         <!-- Level 3-->
-        <section class="level">
-            <hgroup class="hgroup2">
-                <h1 class="level__title">LEVEL UP</h1>
-                <h6 class="level__number">Level 3</h6>
-                <h6 class="level__paragraph">Potenziati e sali di livello. Metti in pratica le skills che hai acquisito, con quiz e progetti reali. Verrai aiutato dagli esperti nel campo e dalla nostra community.
-                </h6>
-            </hgroup>
-            <div class="level__images">
-                <img class="improveSkills" src="https://i.ibb.co/hdHZPcg/Improve-Skills.png" alt="Improve-Skills">
+        <h1 class="level__number">Level 3</h1>
+        <section class="level level_3">
+            <div class="level__left">
+                <hgroup class="hgroup2">
+                    <h1 class="level__title">LEVEL UP</h1>
+                    <p class="level__paragraph">Potenziati e sali di livello. Metti in pratica le skills che hai acquisito, con quiz e progetti reali. Verrai aiutato dagli esperti nel campo e dalla nostra community.
+                    </p>
+                </hgroup>
             </div>
+            <div class="level__right level__right3">
+                <div class="level__images">
+                    <img class="improveSkills" src="img/ImproveSkills.png" alt="Improve-Skills">
+                </div>
+            </div>             
             <div class="line-teal"></div>
         </section>
         <!-- Level 4-->
-        <section class="level">
-            <hgroup class="hgroup2">
-                <h1 class="level__title">FINAL ROUND</h1>
-                <h6 class="level__number">Level 4</h6>
-                <h6 class="level__paragraph">Sconfiggi il boss finale, il progetto che ti permetterà di completare il percorso.
-                    Ti metteremo in contatto con le nostre aziende partner, per confrontarti con mondo del lavoro.</h6>
-            </hgroup>
-            <div class="level__images">
-                <div class="terminal__inside">
-                    <img src="https://i.ibb.co/wgBXN1M/Final-Terminal.png" alt="Final-Terminal">
-                    <h6>Final Boss Terminal</h6>
-                </div>
-                <div class="terminal__inside">
-                    <img src="https://i.ibb.co/TkyF9g8/Angry-Terminal.png" alt="Angry-Terminal">
-                    <h6>Terminal is <span class="terminal__angry">ANGRY</span></h6>
-                </div>
-                <div class="terminal__inside">
-                    <img src="https://i.ibb.co/m832qrn/Defeated-Terminal.png" alt="Defeated-Terminal">
-                    <h6>Terminal is <span class="terminal__defeated">DEFEATED</span></h6>
-                </div>
+        <h1 class="level__number">Level 4</h1>
+        <section class="level level_4">
+            <div class="level__left">
+                <hgroup class="hgroup2">
+                    <h1 class="level__title">FINAL ROUND</h1>
+                    <p class="level__paragraph">Sconfiggi il boss finale, il progetto che ti permetterà di completare il percorso.
+                        Ti metteremo in contatto con le nostre aziende partner, per confrontarti con mondo del lavoro.</p>
+                </hgroup>
             </div>
+            <div class="level__right level__right4">
+                <div class="level__images">
+                    <div class="terminal__inside">
+                        <img src="" alt="Final-Terminal">
+                        <h6>Final Boss Terminal</h6>
+                    </div>
+                    <div class="terminal__inside">
+                        <img src="" alt="Angry-Terminal">
+                        <h6>Terminal is <span class="terminal__angry">ANGRY</span></h6>
+                    </div>
+                    <div class="terminal__inside">
+                        <img src="" alt="Defeated-Terminal">
+                        <h6>Terminal is <span class="terminal__defeated">DEFEATED</span></h6>
+                    </div>
+                </div>
+            </div>        
         </section>
         <!----------------- Email ----------------->
         <section class="email">
@@ -142,23 +157,6 @@
         <section class="footer__left">
             <div class="footer__textLeft">
                 <!-- TabletLeft-->
-                <table>
-                    <tr>
-                        <td colspan="2"><h6>SITEMAP</h6></td>
-                    </tr>
-                    <tr>
-                        <td><span>Content title</span></td>
-                        <td><span>Content title</span></td>
-                    </tr>
-                    <tr>
-                        <td>Content 1</td>
-                        <td>Content 1</td>
-                    </tr>
-                    <tr>
-                        <td>Content 2</td>
-                        <td>Content 2</td>
-                    </tr>
-                </table>
                 <!-- TabletRight-->
                 <table>
                     <tr>
@@ -186,7 +184,7 @@
                     <h6>MADE ON-LINE</h6>
                     <h6>DEVELOPED & DESIGNED IN PALERMO</h6>
                 </hgroup>   
-                <img class="we-icon" src="https://i.ibb.co/CtXGC0z/We.png" alt="We Icon">   
+                <img class="we-icon" src="img/We.png" alt="We Icon">   
             </div>
         </section>
     </footer>
