@@ -17,6 +17,7 @@ h3 {font-size: 48px;}
 h4 {font-size: 40px;}
 h5 {font-size: 32px;}
 h6 {font-size: 24px;}
+p {font-size: 18px;font-weight: 400;}
 
 
 
@@ -53,6 +54,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 1280px;
 }
 
 .nav__list {
@@ -87,8 +89,9 @@ body {
 
 /* Home */
 .home {
-    margin: 48px 16.20% 49px 15%;
-    height: 497px;
+    min-width: 1321px;
+    margin: 48px 16.20% 0 15%;
+    height: 437px;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -114,90 +117,52 @@ body {
     margin-right: 31px;
 }
 
-.arcade-left, .arcade-right {
-    width: 40%;
-}
-
 .home__words {
     display: flex;
     align-items: center;
-    height: 100%;
     border-radius: 0 40px 40px 0;
-    width: 52.69%;
 }
 
-.home hgroup {
+.home__words>hgroup {
     margin-left: 70px;
-    margin-right: 108px;
-    width: 1000px;
-}
-
-.home hgroup>h3 {
-    font-size: 2.4vw;
-}
-
-.home hgroup>h6 {
-    font-size: 1.2vw;
-    font-weight: 400;
+    margin-right: 70px;
 }
 
 /* Levels */
 .level__number {
     font-family: 'Press Start 2P', cursive;
-    font-size: 30px;
     font-weight: 400;
     color: #ff0076;
-    margin: 65px 0 20px 16%;
+    margin: 65px 0 0 16%;
 }
 
 .level {
+    min-width: 1130px;
     position: relative;
     display: flex;
     justify-content: start;
-    height: 390px;
-    margin: 0 26.15% 0 15%;
+    height: 330px;
+    margin: 20px 26.15% 0 15%;
     border-radius: 40px;
 }
 
-hgroup {
+.level__left>hgroup {
     width: 409px;
-    margin: 0 64px 0 41px;
-}
-
-.level__title {
-    font-size: 56px;
-    font-weight: 700;
-    width: 110%;
-    margin-top: 52px;
-}
-
-.level__paragraph {
-    font-weight: 400;
-    font-size: 18px;
+    margin: 52px 64px 0 41px;
 }
 
 .level__images {
     display: flex;
 }
 
-.level__left {
-    width: 637px;
-}
-
 .level__right {
     display: flex;
     align-items: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
     margin-right: 40px;
+    width: 100%;
 }
 
 /* Level 1 */
-.character__inside {
-    margin-right: 56px;
-}
-
 .level_1 {
     background: linear-gradient(97.04deg, #000000 38.39%, #2000B4 106.58%);
     box-shadow: -5px 1px 31px #2000B4;
@@ -207,12 +172,15 @@ hgroup {
     background-image: url("/img/GridBlue.png");
 }
 
-
-/* Level 2 */
-.learningSkills {
-    margin-top: 40px;
+.character__inside {
+    margin-right: 56px;
 }
 
+.character__inside:last-child {
+    margin-right: 0;
+}
+
+/* Level 2 */
 .level_2 {
     background: linear-gradient(97.04deg, #000000 38.39%, #FF0076 106.58%);
     box-shadow: -5px 1px 31px #FF0076;
@@ -223,10 +191,6 @@ hgroup {
 }
 
 /* Level 3 */
-.improveSkills {
-    margin-top: -20px;
-}
-
 .level_3 {
     background: linear-gradient(97.04deg, #000000 38.39%, #33FFD9 106.58%);
     box-shadow: -5px 1px 31px #33FFD9;
@@ -246,10 +210,6 @@ hgroup {
     background-image: url("/img/GridBlu.png");
 }
 
-.finalRound {
-    margin-top: 65px;
-}
-
 .terminal__inside {
     margin-right: 23.36px;
 }
@@ -260,6 +220,7 @@ hgroup {
     margin-top: 10px;
     width: 327.05px;
     line-height: 1.3;
+    font-size: 10px;
 }
 
 .terminal__angry {
