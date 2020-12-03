@@ -89,7 +89,7 @@ body {
 
 /* Home */
 .home {
-    min-width: 1321px;
+    width: 1321px;
     margin: 48px 16.20% 0 15%;
     height: 437px;
     border-radius: 50px;
@@ -148,7 +148,11 @@ body {
 
 .level__left>hgroup {
     width: 409px;
+    height: 60%;
     margin: 52px 64px 0 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .level__images {
@@ -351,4 +355,103 @@ table span {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+@media only screen and (max-width: 1620px) {
+
+/* Navbar */
+.header__inside {
+    width: 990px;
+}
+
+/* Home */
+.home {
+    width: 1021px;
+}
+
+.arcade-right {
+    display: none;
+}
+
+.arcade-left {
+    margin-right: 0;
+}
+
+/* Levels */
+.level {
+    width: 915px;
+}
+
+.level__left>hgroup {
+    width: 309px;
+    margin: 52px 64px 0 41px;
+}
+
+.level__title {
+    font-size: 40px;
+}
+
+.level__paragraph {
+    font-size: 16px;
+}
+
+/* Level 1 */
+.character__inside {
+    margin-right: 26px;
+}
+
+.character__inside>img {
+    width: 100%;
+}
+
+.character__inside>h6 {
+    width: 100%;
+    font-size: 9px;
+}
+
+/* Level 4 */
+.terminal__inside>img {
+    width: 100%;
+}
+
+.terminal__inside>h6 {
+    width: 150px;
+    font-size: 12px;
+}
+
+/* E-mail */
+.email {
+    width: 808px;
+}
+
+.email>h1 {
+    font-size: 64px;
+}
+
+.email__zone>h3 {
+    font-size: 38px;
+}
+
+.email__form>input {
+    width: 275px;
+}
+
+.footer__left {
+    width: 830px;
+}
+
+.footer__right {
+    width: 1090px;
+}
+
+/* Footer TextLeft */
+.footer__textLeft {
+    margin-left: 200px;  
+}
+
+.footer__textRight {
+    margin-left: 88px;
+    width: 530px;
+    height: 200px;
+}
 }
