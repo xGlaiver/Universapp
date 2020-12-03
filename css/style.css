@@ -133,11 +133,11 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-weight: 400;
     color: #ff0076;
-    margin: 65px 0 0 16%;
+    margin: 65px 0 0 17%;
 }
 
 .level {
-    min-width: 1130px;
+    width: 1130px;
     position: relative;
     display: flex;
     justify-content: start;
@@ -174,6 +174,15 @@ body {
 
 .character__inside {
     margin-right: 56px;
+}
+
+.character__inside>h6 {
+    color: #FF0076;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    font-weight: 400;
+    margin: 9px 0 0 9px;
+    word-spacing: -4px;
 }
 
 .character__inside:last-child {
@@ -236,7 +245,7 @@ body {
     margin: 0 15%;
     display: flex;
     margin-top: 120px;
-    width: 1150px;
+    width: 1130px;
 }
 
 .email>h1 {
@@ -247,7 +256,7 @@ body {
 
 .email__zone {
     border-left: 2px solid  #ff0076;
-    margin-left: 75px;
+    margin-left: 72px;
     padding-left: 100px;
 }
 
@@ -294,12 +303,12 @@ footer {
 
 .footer__left {
     background-color: #33FFD9;
-    width: 43.33%;
+    width: 830px;
 }
 
 .footer__right {
     background-color: #4003CA;
-    width: 56.67%;
+    width: 1090px;
 }
 
 
