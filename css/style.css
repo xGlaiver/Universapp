@@ -250,6 +250,7 @@ body {
     display: flex;
     margin-top: 120px;
     width: 1130px;
+    align-items: center;
 }
 
 .email>h1 {
