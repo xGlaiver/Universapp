@@ -37,14 +37,23 @@ body {
     z-index: -1;
 }
 
+.line-blue, .line-pink, .line-teal {
+    position: absolute;
+    width: 100%;
+    margin-left: 100%;
+    top: 50%;
+}
+
+.line-blue {
+    border-top: 2px solid #2000B4;
+}
+
 .line-pink {
-    border-bottom: 2px solid #ff0076;
-    margin: 104px 0 0 16.6%;
+    border-top: 2px solid #FF0076;
 }
 
 .line-teal {
-    border-bottom: 2px solid #33ffd9;
-    /*margin-left: 16.6%;*/
+    border-top: 2px solid #33FFD9;
 }
 
 /* Navbar */
