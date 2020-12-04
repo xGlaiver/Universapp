@@ -30,7 +30,7 @@ body {
 
 /* Lines */
 .line-violet {
-    width: 100%;
+    width: 1000%;
     position: absolute;
     top: 400px;
     border-top: 2px solid #4003ca;
@@ -341,6 +341,7 @@ table {
 
 
 td, td>h6, table span {
+    padding: 5px;
     color: #4003CA;
 }
 
@@ -435,7 +436,7 @@ table span {
 }
 
 .email>h1 {
-    font-size: 64px;
+    font-size: 74px;
 }
 
 .email__zone>h3 {
@@ -446,6 +447,11 @@ table span {
     width: 275px;
 }
 
+.email__form>button {
+    width: 100px;
+}
+
+/* Footer */
 .footer__left {
     width: 830px;
 }
@@ -463,5 +469,102 @@ table span {
     margin-left: 88px;
     width: 530px;
     height: 200px;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+
+
+/* Navbar */
+.header__inside {
+    width: 840px;
+}
+
+/* Home */
+.home {
+    width: 870px;
+}
+
+.home__words>hgroup {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.home__words p {
+    padding-top: 30px;
+}
+
+/* Levels */
+.level {
+    width: 770px;
+}
+
+.level__left>hgroup {
+    width: 280px;  
+    margin: 52px 9px 0 21px;
+}
+
+.level__title {
+    font-size: 35px;
+}
+
+/* Level 2,3,4 */
+.level__images>img, .terminal__inside>img, .terminal__inside>h6 {
+    width: 100%;
+}
+
+/* Level 4 */
+.terminal__inside>h6 {
+    font-size: 6px;
+}
+
+/* E-mail */
+.email {
+    width: 768px;
+}
+
+.email>h1 {
+    font-size: 72px;
+}
+
+.email__zone {
+    margin-left: 40px;
+    padding-left: 40px;
+}
+
+.email__zone>h3 {
+    padding-left: 0;
+    font-size: 30px;
+}
+
+.email__form>input {
+    width: 235px;
+}
+
+.email__form>button {
+    width: 83px;
+}
+
+/* Footer */
+.footer__left {
+    min-width: 430px;
+}
+
+.footer__right {
+    min-width: 790px;
+}
+
+/* Footer TextLeft */
+.footer__textLeft {
+    margin-left: 60px;  
+}
+
+.footer__textRight {
+    margin-left: 60px;
+    width: 300px;
+}
+
+.footer__textRight h6 {
+    width: 300px;
 }
 }
