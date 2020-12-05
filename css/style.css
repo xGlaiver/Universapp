@@ -711,6 +711,10 @@ table span {
     margin-top: 0;
 }
 
+.level__right {
+    margin-right: 0;
+}
+
 .level__title, .level__paragraph {
     width: 90%;
 }
