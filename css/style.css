@@ -215,6 +215,12 @@ body {
     background-image: url("/img/GridPink.png");
 }
 
+.level__right2 .level__images {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 /* Level 3 */
 .level_3 {
     background: linear-gradient(97.04deg, #000000 38.39%, #33FFD9 106.58%);
@@ -512,6 +518,16 @@ table span {
     font-size: 35px;
 }
 
+/* Level 2 */
+.level__right2 .level__images {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.level__right2 .level__images img {
+    margin-right: 20px;
+}
+
 /* Level 2,3,4 */
 .level__images>img, .terminal__inside>img, .terminal__inside>h6 {
     width: 100%;
@@ -751,9 +767,8 @@ table span {
     margin-left: 20px;
 }
 
-.learningSkills {
-    max-width: 100%;
-    max-height: 100%;
+.level_2 .level__images img {
+    width: 100px;
 }
 
 /* Level 3 */
