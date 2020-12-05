@@ -802,7 +802,7 @@ footer {
 }
 
 .footer__textLeft {
-     width: 55%;
+    min-width: 329px;
 }
 
 .footer__textRight {
