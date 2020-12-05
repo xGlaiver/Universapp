@@ -681,6 +681,7 @@ table span {
 
 .home__images {
     border-radius: 0 0 40px 40px;
+    max-height: 442px;
 }
 
 /* Levels */
@@ -737,6 +738,10 @@ table span {
 .level_2 .level__images {
     width: 60%;
     margin-left: 20px;
+}
+
+.learningSkills {
+    max-width: 100%;
 }
 
 /* Level 3 */
