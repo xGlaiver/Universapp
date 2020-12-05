@@ -741,7 +741,8 @@ table span {
 }
 
 .learningSkills {
-    max-width: 247.83px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Level 3 */
