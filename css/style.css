@@ -741,7 +741,7 @@ table span {
 }
 
 .learningSkills {
-    height: 115px;
+    max-height: 143px;
 }
 
 /* Level 3 */
