@@ -798,7 +798,7 @@ footer {
 }
 
 .footer__textLeft, .footer__textRight {
-    margin: 40px;
+    margin: 20px auto;
 }
 
 .footer__textLeft {
