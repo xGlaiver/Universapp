@@ -30,7 +30,7 @@ body {
 
 /* Lines */
 .line-violet {
-    width: 1000%;
+    width: 100%;
     position: absolute;
     top: 400px;
     border-top: 2px solid #4003ca;
@@ -749,6 +749,11 @@ table span {
     max-width: 283.13px;
     max-height: 166.83px;
     margin-left: 20px;
+}
+
+.learningSkills {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Level 3 */
