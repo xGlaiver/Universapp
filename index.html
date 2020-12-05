@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="copyright" content="UniversApp" />
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -24,15 +24,27 @@
     <!----------------- Navbar ----------------->
     <header>
         <div class="header__inside">
-            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
             <nav>
                 <ul class="nav__list">
                     <li><a href="#" class="nav__item nav__item_1">PERCORSI</a></li>
                     <li><a href="#" class="nav__item nav__item_2">PRICING</a></li>
                     <li><a href="#" class="nav__item nav__item_3">SIGN_UP / LOG_IN</a></li>
                 </ul>
+                <div class="hamburger open-links">
+                    <div class="hamburger__line1"></div>
+                    <div class="hamburger__line2"></div>
+                    <div class="hamburger__line3"></div>
+                </div>
             </nav>
-        </div>
+            <div class="overlay">
+                <a href="javascript:void(0)" class="close-links">&times;</a>
+                <div class="overlay-links">
+                  <a class="nav__item_1" href="#">PERCORSI</a>
+                  <a class="nav__item_2" href="#">PRICING</a>
+                  <a class="nav__item_3" href="#">SIGN_UP / LOG_IN</a>
+                </div>
+              </div>
     </header>
 
     <!----------------- Main ----------------->
@@ -46,9 +58,10 @@
             <div class="home__words">
                 <hgroup>
                     <h3>Diventa un Digital Hero</h3>
-                    <p>Studia, pratica e scopri un mondo di opportunit&aacute; nel digitale. Inizia ora la tua avventura.</p>
-                </hgroup>     
-            </div>         
+                    <p>Studia, pratica e scopri un mondo di opportunit&aacute; nel digitale. Inizia ora la tua
+                        avventura.</p>
+                </hgroup>
+            </div>
         </section>
         <div class="line-violet"></div>
 
@@ -59,7 +72,8 @@
             <div class="level__left">
                 <hgroup>
                     <h3 class="level__title">CHOOSE YOUR CHARACTER</h3>
-                    <p class="level__paragraph">Inizia il tuo cammino e definisci il tipo di eroe che vuoi diventare. Pensi di essere un mago del codice, un paladino del design o un guerriero del marketing?</p>
+                    <p class="level__paragraph">Inizia il tuo cammino e definisci il tipo di eroe che vuoi diventare.
+                        Pensi di essere un mago del codice, un paladino del design o un guerriero del marketing?</p>
                 </hgroup>
             </div>
             <div class="level__right level__right1">
@@ -79,14 +93,15 @@
                 </div>
             </div>
             <div class="line-blue"></div>
-        </section>     
+        </section>
         <!-- Level 2-->
         <h6 class="level__number">Level 2</h6>
         <section class="level level_2">
             <div class="level__left">
                 <hgroup class="hgroup2">
                     <h3 class="level__title">LEARNING SKILLS</h3>
-                    <p class="level__paragraph">Acquisisci le conoscenze necessarie per proseguire nel tuo cammino. Segui i video corsi, impara la teoria e preparati al prossimo livello.
+                    <p class="level__paragraph">Acquisisci le conoscenze necessarie per proseguire nel tuo cammino.
+                        Segui i video corsi, impara la teoria e preparati al prossimo livello.
                     </p>
                 </hgroup>
             </div>
@@ -94,8 +109,8 @@
                 <div class="level__images">
                     <img class="learningSkills" src="img/LearningSkills.png" alt="Learning-Skills">
                 </div>
-            </div>  
-            <div class="line-pink"></div> 
+            </div>
+            <div class="line-pink"></div>
         </section>
         <!-- Level 3-->
         <h6 class="level__number">Level 3</h6>
@@ -103,7 +118,9 @@
             <div class="level__left">
                 <hgroup class="hgroup2">
                     <h3 class="level__title">LEVEL UP</h3>
-                    <p class="level__paragraph">Potenziati e sali di livello. Metti in pratica le skills che hai acquisito, con quiz e progetti reali. Verrai aiutato dagli esperti nel campo e dalla nostra community.
+                    <p class="level__paragraph">Potenziati e sali di livello. Metti in pratica le skills che hai
+                        acquisito, con quiz e progetti reali. Verrai aiutato dagli esperti nel campo e dalla nostra
+                        community.
                     </p>
                 </hgroup>
             </div>
@@ -111,7 +128,7 @@
                 <div class="level__images">
                     <img class="improveSkills" src="img/ImproveSkills.png" alt="Improve-Skills">
                 </div>
-            </div>             
+            </div>
             <div class="line-teal"></div>
         </section>
         <!-- Level 4-->
@@ -120,8 +137,10 @@
             <div class="level__left">
                 <hgroup class="hgroup2">
                     <h3 class="level__title">FINAL ROUND</h3>
-                    <p class="level__paragraph">Sconfiggi il boss finale, il progetto che ti permetterà di completare il percorso.
-                        Ti metteremo in contatto con le nostre aziende partner, per confrontarti con mondo del lavoro.</p>
+                    <p class="level__paragraph">Sconfiggi il boss finale, il progetto che ti permetterà di completare il
+                        percorso.
+                        Ti metteremo in contatto con le nostre aziende partner, per confrontarti con mondo del lavoro.
+                    </p>
                 </hgroup>
             </div>
             <div class="level__right level__right4">
@@ -139,8 +158,8 @@
                         <h6>Terminal is <span class="terminal__defeated">DEFEATED</span></h6>
                     </div>
                 </div>
-            </div>     
-            <div class="line-blue"></div>   
+            </div>
+            <div class="line-blue"></div>
         </section>
         <!----------------- Email ----------------->
         <section class="email">
@@ -150,7 +169,7 @@
                 <form class="email__form" action="">
                     <input type="email" placeholder="e-mail">
                     <button>Start<img src="https://i.ibb.co/RPkPdDV/Vector.png" alt="Vector"></button>
-                </form>          
+                </form>
             </div>
         </section>
     </main>
@@ -161,7 +180,9 @@
                 <!-- Table-->
                 <table>
                     <tr>
-                        <td colspan="2"><h6>CONTACTS</h6></td>
+                        <td colspan="2">
+                            <h6>CONTACTS</h6>
+                        </td>
                     </tr>
                     <tr>
                         <td><span>e-mail</span><br>love@universapp.it</td>
@@ -184,8 +205,8 @@
                     <h6>THOUGHT IN SICILY</h6>
                     <h6>MADE ON-LINE</h6>
                     <h6>DEVELOPED & DESIGNED IN PALERMO</h6>
-                </hgroup>   
-                <img class="we-icon" src="img/We.png" alt="We Icon">   
+                </hgroup>
+                <img class="we-icon" src="img/We.png" alt="We Icon">
             </div>
         </section>
     </footer>
