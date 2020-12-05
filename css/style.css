@@ -700,6 +700,10 @@ table span {
     margin-right: auto;
 }
 
+.level__left {
+    margin-top: 25px;
+}
+
 .level__left>hgroup {
     width: 100%;
     height: 100%;
@@ -736,13 +740,8 @@ table span {
 }
 
 .level_2 .level__images {
-    width: 100%;
+    width: 70%;
     margin-left: 20px;
-}
-
-.learningSkills {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Level 3 */
