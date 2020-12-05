@@ -742,6 +742,8 @@ table span {
 
 .level_2 .level__images {
     width: 70%;
+    max-width: 283.13px;
+    max-height: 166.83px;
     margin-left: 20px;
 }
 
