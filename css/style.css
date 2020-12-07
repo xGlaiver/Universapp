@@ -761,14 +761,13 @@ table span {
 }
 
 .level_2 .level__images {
-    width: 70%;
-    max-width: 283.13px;
-    max-height: 166.83px;
-    margin-left: 20px;
+    width: 30%;
+    margin-left: 100px;
 }
 
 .level_2 .level__images img {
-    width: 100px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Level 3 */
