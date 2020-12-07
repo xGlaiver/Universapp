@@ -121,7 +121,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url("/img/GridPurple.png"), linear-gradient(to top,  rgba(0, 0, 0, 0) 30%, #33FFD9 110%);
+    background-image: url("https://i.ibb.co/M6jnBzs/Grid-Purple.png"), linear-gradient(to top,  rgba(0, 0, 0, 0) 30%, #33FFD9 110%);
     border-radius: 50px 0 0 50px;
 }
 
@@ -186,7 +186,7 @@ body {
 }
 
 .level__right1 {
-    background-image: url("/img/GridBlue.png");
+    background-image: url("https://i.ibb.co/XtHdFQF/GridBlue.png");
 }
 
 .character__inside {
@@ -213,7 +213,7 @@ body {
 }
 
 .level__right2 {
-    background-image: url("/img/GridPink.png");
+    background-image: url("https://i.ibb.co/YfVqc0n/GridPink.png");
 }
 
 .level__right2 .level__images {
@@ -230,7 +230,7 @@ body {
 }
 
 .level__right3 {
-    background-image: url("/img/GridTeal.png");
+    background-image: url("https://i.ibb.co/0m2Tvdh/GridTeal.png");
 }
 
 .improveSkills {
@@ -244,7 +244,7 @@ body {
 }
 
 .level__right4 {
-    background-image: url("/img/GridBlu.png");
+    background-image: url("https://i.ibb.co/XtHdFQF/GridBlue.png");
 }
 
 .terminal__inside {
@@ -588,6 +588,76 @@ table span {
 .footer__textRight h6 {
     width: 300px;
 }
+}
+
+@media only screen and (max-width: 1110px) {
+
+/* Navbar */
+.header__inside {
+    width: 600px;
+}
+
+.nav__list a {
+    margin-left: 40px;
+}
+
+/* Home */
+.home {
+    width: 630px;
+}
+
+/* Levels */
+.level {
+    width: 620px;
+}
+
+.level__left>hgroup {
+    width: 280px;  
+    margin: 52px 9px 0 21px;
+}
+
+.level__title {
+    font-size: 35px;
+}
+
+/* Level 2 */
+.level_2 img {
+    max-width: 100%;
+}
+
+/* E-mail */
+.email {
+    width: 768px;
+}
+
+.email>h1 {
+    width: 240px;
+    font-size: 52px;
+}
+
+.email__zone {
+    margin-left: 10px;
+    padding-left: 30px;
+}
+
+.email__zone>h3 {
+    font-size: 25px;
+}
+
+.email__form>input {
+    width: 225px;
+}
+
+/* Footer */
+.footer__right {
+    min-width: 690px;
+}
+
+.footer__textRight {
+    margin-left: 40px;
+    width: 280px;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
