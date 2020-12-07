@@ -176,6 +176,7 @@ body {
     align-items: center;
     margin-right: 40px;
     width: 100%;
+    border-radius: 0 40px 40px 0;
 }
 
 /* Level 1 */
@@ -218,7 +219,8 @@ body {
 .level__right2 .level__images {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Level 3 */
@@ -229,6 +231,10 @@ body {
 
 .level__right3 {
     background-image: url("/img/GridTeal.png");
+}
+
+.improveSkills {
+    width: 100%;
 }
 
 /* Level 4 */
@@ -519,11 +525,6 @@ table span {
 }
 
 /* Level 2 */
-.level__right2 .level__images {
-    width: 200px;
-    margin-left: 100px;
-}
-
 .level__right2 .level__images img {
     margin-right: 20px;
 }
@@ -761,13 +762,17 @@ table span {
 }
 
 .level_2 .level__images {
-    width: 30%;
-    margin-left: 100px;
+    width: 100%;
+    margin-left: 20px;
 }
 
 .level_2 .level__images img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
+}
+
+.level_2 hgroup {
+    min-height: 206px;
 }
 
 /* Level 3 */
@@ -777,6 +782,7 @@ table span {
 
 .level_3 hgroup {
     margin-top: 40px;
+    min-height: 206px;
 }
 
 /* Level 4 */
