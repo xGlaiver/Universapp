@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -12,15 +13,970 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
-
-    <title>Pricing</title>
+    <title>UniversApp</title>
 </head>
+
 <body>
+
+    <!-- Style -->
+    <style>
+        /* Global*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    letter-spacing: 1px;
+}
+
+li {list-style-type: none;}
+
+a {text-decoration: none;}
+
+h1 {font-size: 64px;}
+h2 {font-size: 56px;}
+h3 {font-size: 48px;}
+h4 {font-size: 40px;}
+h5 {font-size: 32px;}
+h6 {font-size: 24px;}
+p {font-size: 18px;font-weight: 400;}
+
+
+
+/* Body */
+body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* Lines */
+.line-violet {
+    width: 100%;
+    position: absolute;
+    top: 400px;
+    border-top: 2px solid #4003ca;
+    z-index: -1;
+}
+
+.line-blue, .line-pink, .line-teal {
+    position: absolute;
+    width: 100%;
+    margin-left: 100%;
+    top: 50%;
+}
+
+.line-blue {
+    border-top: 2px solid #2000B4;
+}
+
+.line-pink {
+    border-top: 2px solid #FF0076;
+}
+
+.line-teal {
+    border-top: 2px solid #33FFD9;
+}
+
+/* Navbar */
+.overlay {
+    display: none;
+}
+
+.header__inside {
+    margin: 25px 16.20% 0 16.61%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1280px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 50px;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.nav__item_1 {
+    border-bottom: 4px solid #ff0076;
+    width: 117px;
+}
+
+.nav__item_2 {
+    border-bottom: 4px solid #ff9300;
+    width: 123px;
+}
+
+.nav__item_3 {
+    background-image: linear-gradient(90deg,#4003ca 50%,#33ffd9 50%);
+    background-size: 100% 4px; 
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    width: 158px;
+    padding-bottom: 9px;
+}
+
+/* Home */
+.home {
+    width: 1321px;
+    margin: 48px 16.20% 0 15%;
+    height: 437px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(97.04deg, black 40%, #4003ca 110%);
+    box-shadow: -5px 1px 31px #4003CA;
+}
+
+.home__images, .home__words {
+    width: 50%;  
+}
+
+.home__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("https://i.ibb.co/M6jnBzs/Grid-Purple.png"), linear-gradient(to top,  rgba(0, 0, 0, 0) 30%, #33FFD9 110%);
+    border-radius: 50px 0 0 50px;
+}
+
+.arcade-left {
+    margin-right: 31px;
+}
+
+.home__words {
+    display: flex;
+    align-items: center;
+    border-radius: 0 40px 40px 0;
+}
+
+.home__words>hgroup {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+/* Levels */
+.level__number {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    color: #ff0076;
+    margin: 65px 0 0 17%;
+}
+
+.level {
+    width: 1130px;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    height: 330px;
+    margin: 20px 26.15% 0 15%;
+    border-radius: 40px;
+}
+
+.level__left>hgroup {
+    width: 409px;
+    height: 60%;
+    margin: 52px 64px 0 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.level__images {
+    display: flex;
+}
+
+.level__right {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    width: 100%;
+    border-radius: 0 40px 40px 0;
+}
+
+/* Level 1 */
+.level_1 {
+    background: linear-gradient(97.04deg, #000000 38.39%, #2000B4 106.58%);
+    box-shadow: -5px 1px 31px #2000B4;
+}
+
+.level__right1 {
+    background-image: url("https://i.ibb.co/XtHdFQF/GridBlue.png");
+}
+
+.character__inside {
+    margin-right: 56px;
+}
+
+.character__inside>h6 {
+    color: #FF0076;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    font-weight: 400;
+    margin: 9px 0 0 9px;
+    word-spacing: -4px;
+}
+
+.character__inside:last-child {
+    margin-right: 0;
+}
+
+/* Level 2 */
+.level_2 {
+    background: linear-gradient(97.04deg, #000000 38.39%, #FF0076 106.58%);
+    box-shadow: -5px 1px 31px #FF0076;
+}
+
+.level__right2 {
+    background-image: url("https://i.ibb.co/YfVqc0n/GridPink.png");
+}
+
+.level__right2 .level__images {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Level 3 */
+.level_3 {
+    background: linear-gradient(97.04deg, #000000 38.39%, #33FFD9 106.58%);
+    box-shadow: -5px 1px 31px #33FFD9;
+}
+
+.level__right3 {
+    background-image: url("https://i.ibb.co/0m2Tvdh/GridTeal.png");
+}
+
+.improveSkills {
+    width: 100%;
+}
+
+/* Level 4 */
+.level_4 {
+    background: linear-gradient(274.78deg, #2000B4 0.25%, #000000 69.94%);
+    box-shadow: -5px 1px 31px #2000B4;
+}
+
+.level__right4 {
+    background-image: url("https://i.ibb.co/XtHdFQF/GridBlue.png");
+}
+
+.terminal__inside {
+    margin-right: 14px;
+}
+
+.terminal__inside>h6 {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 181px;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.terminal__angry {
+    color: #ff0076; 
+}
+
+.terminal__defeated {
+    color: #33FFD9;
+}
+
+/* E-mail */
+.email {
+    margin: 0 15%;
+    display: flex;
+    margin-top: 120px;
+    width: 1130px;
+    align-items: center;
+}
+
+.email>h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #ff0076;
+}
+
+.email__zone {
+    border-left: 2px solid  #ff0076;
+    margin-left: 72px;
+    padding-left: 100px;
+}
+
+.email__form {
+    margin-top: 60px;
+    display: flex;
+}
+
+.email__form>input {
+    background: rgba(255, 0, 118, 0.53);
+    border: 0;
+    outline: 0;
+    width: 325px;
+    height: 39px;
+    margin-right: 25px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.email__form>input::placeholder {
+    color: #ff0076;
+    font-size: 18px;
+}
+
+.email__form>button {
+    background-color: #ff0076;
+    border: 0;
+    width: 143px;
+    height: 39px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 96px;
+    height: 338px;
+    background-color: #4003CA;
+}
+
+.footer__left {
+    background-color: #33FFD9;
+    width: 830px;
+}
+
+.footer__right {
+    background-color: #4003CA;
+    width: 1090px;
+}
+
+
+/* Footer TextLeft */
+.footer__textLeft {
+    display: flex;
+    margin: 65px 0 0 292px;
+    width: 374px;
+  
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+
+td, td>h6, table span {
+    padding: 5px 5px 5px 1px;
+    color: #4003CA;
+}
+
+table span {
+    font-weight: 700;
+}
+
+/* Footer TextRight */
+.footer__textRight {
+    position: relative;
+    margin: 65px 0 0 288px;
+    width: 530px;
+    height: 200px;
+}
+
+.footer__textRight h6 {
+    color: #33FFD9;
+    width: 500px;
+}
+
+.we-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1620px) {
+
+/* Navbar */
+.header__inside {
+    width: 990px;
+}
+
+/* Home */
+.home {
+    width: 1021px;
+}
+
+.arcade-right {
+    display: none;
+}
+
+.arcade-left {
+    margin-right: 0;
+}
+
+/* Levels */
+.level {
+    width: 915px;
+}
+
+.level__left>hgroup {
+    width: 309px;
+    margin: 52px 64px 0 41px;
+}
+
+.level__title {
+    font-size: 40px;
+}
+
+.level__paragraph {
+    font-size: 16px;
+}
+
+/* Level 1 */
+.character__inside {
+    margin-right: 26px;
+}
+
+.character__inside>img {
+    width: 100%;
+}
+
+.character__inside>h6 {
+    width: 100%;
+    font-size: 9px;
+}
+
+/* Level 4 */
+.terminal__inside>img {
+    width: 100%;
+}
+
+.terminal__inside>h6 {
+    width: 150px;
+    font-size: 12px;
+}
+
+/* E-mail */
+.email {
+    width: 808px;
+}
+
+.email>h1 {
+    font-size: 74px;
+}
+
+.email__zone>h3 {
+    font-size: 38px;
+}
+
+.email__form>input {
+    width: 275px;
+}
+
+.email__form>button {
+    width: 100px;
+}
+
+/* Footer */
+.footer__left {
+    width: 830px;
+}
+
+.footer__right {
+    width: 1090px;
+}
+
+/* Footer TextLeft */
+.footer__textLeft {
+    margin-left: 200px;  
+}
+
+.footer__textRight {
+    margin-left: 88px;
+    width: 530px;
+    height: 200px;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+
+
+/* Navbar */
+.header__inside {
+    width: 840px;
+}
+
+/* Home */
+.home {
+    width: 870px;
+}
+
+.home__words>hgroup {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.home__words p {
+    padding-top: 30px;
+}
+
+/* Levels */
+.level {
+    width: 770px;
+}
+
+.level__left>hgroup {
+    width: 280px;  
+    margin: 52px 9px 0 21px;
+}
+
+.level__title {
+    font-size: 35px;
+}
+
+/* Level 2 */
+.level__right2 .level__images img {
+    margin-right: 20px;
+}
+
+/* Level 2,3,4 */
+.level__images>img, .terminal__inside>img, .terminal__inside>h6 {
+    width: 100%;
+}
+
+/* Level 4 */
+.terminal__inside>h6 {
+    font-size: 6px;
+}
+
+/* E-mail */
+.email {
+    width: 768px;
+}
+
+.email>h1 {
+    font-size: 72px;
+}
+
+.email__zone {
+    margin-left: 40px;
+    padding-left: 40px;
+}
+
+.email__zone>h3 {
+    padding-left: 0;
+    font-size: 30px;
+}
+
+.email__form>input {
+    width: 235px;
+}
+
+.email__form>button {
+    width: 83px;
+}
+
+/* Footer */
+.footer__left {
+    min-width: 430px;
+}
+
+.footer__right {
+    min-width: 790px;
+}
+
+/* Footer TextLeft */
+.footer__textLeft {
+    margin-left: 60px;  
+}
+
+.footer__textRight {
+    margin-left: 60px;
+    width: 300px;
+}
+
+.footer__textRight h6 {
+    width: 300px;
+}
+}
+
+@media only screen and (max-width: 1110px) {
+
+/* Navbar */
+.header__inside {
+    width: 600px;
+}
+
+.nav__list a {
+    margin-left: 40px;
+}
+
+/* Home */
+.home {
+    width: 630px;
+}
+
+/* Levels */
+.level {
+    width: 620px;
+}
+
+.level__left>hgroup {
+    width: 280px;  
+    margin: 52px 9px 0 21px;
+}
+
+.level__title {
+    font-size: 35px;
+}
+
+/* Level 2 */
+.level_2 img {
+    max-width: 100%;
+}
+
+/* E-mail */
+.email {
+    width: 768px;
+}
+
+.email>h1 {
+    width: 240px;
+    font-size: 52px;
+}
+
+.email__zone {
+    margin-left: 10px;
+    padding-left: 30px;
+}
+
+.email__zone>h3 {
+    font-size: 25px;
+}
+
+.email__form>input {
+    width: 225px;
+}
+
+/* Footer */
+.footer__right {
+    min-width: 690px;
+}
+
+.footer__textRight {
+    margin-left: 40px;
+    width: 280px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+/* Lines */
+.line-violet, .line-blue, .line-pink, .line-teal {
+    display: none;
+}
+
+/* Nav */
+.header__inside {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    min-width: 329px;
+    width: 55%;
+    position: relative;
+}
+
+.nav__list {
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger__line1 {
+    width: 68px;
+    height: 10px;
+    background-color: #FF0076;
+}
+
+.hamburger__line2 {
+    width: 68px;
+    height: 10px;
+    background-color: #FF8400;
+    margin-top: 8px;
+}
+
+.hamburger__line3 {
+    width: 68px;
+    height: 10px;
+    background-image: linear-gradient(90deg,#4003ca 50%,#33ffd9 50%);
+    margin-top: 8px;
+}
+
+.close-links {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    z-index: 100;
+  }
+
+.overlay {
+    display: block;
+    position: fixed;
+    height: 0;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, 0.96);
+    transition: .5s;
+    overflow: hidden;
+}
+
+.overlay-links {
+    position: relative;
+    top: 20%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-links a {
+    margin: 20px;
+    font-size: 28px;
+}
+
+.nav__item_1, .nav__item_2, .nav__item_3 {
+    width: 60%;
+    text-align: center;
+}
+
+/* Home */
+.home {
+    flex-direction: column-reverse;
+    min-width: 329px;
+    width: 55%;
+    min-height: 745px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(-60deg, black 40%, #4003ca 100%);
+}
+
+.home__images, .home__words {
+    width: 100%;  
+}
+
+.home__words>hgroup {
+    margin: 25px 30px;
+}
+
+.home__images {
+    border-radius: 0 0 40px 40px;
+    max-height: 442px;
+}
+
+/* Levels */
+.level__number {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.level {
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 329px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.level__left {
+    margin-top: 25px;
+}
+
+.level__left>hgroup {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.level__right {
+    margin-right: 0;
+}
+
+.level__title, .level__paragraph {
+    width: 90%;
+}
+
+.level__title {
+    font-size: 48px;
+}
+
+.level__paragraph {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.level__right1, .level__right2, .level__right3, .level__right4 {
+    background-image: none;
+}
+
+/* Level 1 */
+.level_1 {
+    height: 560px;
+    background: linear-gradient(114deg, #000000 38.39%, #2000B4 106.58%);
+
+}
+
+/* Level 2 */
+.level_2 {
+    height: 472px;
+}
+
+.level_2 .level__images {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.level_2 .level__images img {
+    max-width: 70%;
+    height: auto;
+}
+
+.level_2 hgroup {
+    min-height: 206px;
+}
+
+/* Level 3 */
+.level_3 {
+    height: 472px;
+}
+
+.level_3 hgroup {
+    margin-top: 40px;
+    min-height: 206px;
+}
+
+/* Level 4 */
+.level_4 {
+    height: 521px;
+}
+
+.level_4 .level__images {
+    margin-left: 15px;
+}
+
+/* Email */
+.email {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-width: 329px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+}
+
+.email h1 {
+    font-size: 75px;
+}
+
+.email__zone {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.email__form {
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    flex-direction: column;
+    min-width: 329px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__left, .footer__right {
+    min-height: 306px;
+    display: flex;
+    justify-content: center;
+    min-width: 329px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__textLeft, .footer__textRight {
+    margin: 20px auto;
+}
+
+.footer__textLeft {
+    min-width: 329px;
+}
+
+.footer__textRight {
+    min-width: 329px;
+    display: flex;
+    justify-content: center;
+}
+}
+    </style>
+
     <!----------------- Navbar ----------------->
     <header>
         <div class="header__inside">
             <a class="logo" href="index.html"><img src="https://i.ibb.co/m6bvJxR/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__item nav__item_1">PERCORSI</a></li>
+                    <li><a href="#" class="nav__item nav__item_2">PRICING</a></li>
+                    <li><a href="#" class="nav__item nav__item_3">SIGN_UP / LOG_IN</a></li>
+                </ul>
+                <div class="hamburger open-links">
+                    <div class="hamburger__line1"></div>
+                    <div class="hamburger__line2"></div>
+                    <div class="hamburger__line3"></div>
+                </div>
+            </nav>
+            <div class="overlay">
+                <a href="javascript:void(0)" class="close-links">&times;</a>
+                <div class="overlay-links">
+                  <a class="nav__item_1" href="#">PERCORSI</a>
+                  <a class="nav__item_2" href="#">PRICING</a>
+                  <a class="nav__item_3" href="#">SIGN_UP / LOG_IN</a>
+                </div>
+              </div>
     </header>
 
     <!----------------- Main ----------------->
@@ -28,119 +984,131 @@
         <!----------------- Home ----------------->
         <section class="home">
             <div class="home__images">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img class="arcade-left" src="https://i.ibb.co/ysbk7nv/Arcade-Left.png" alt="Arcade-Left">
+                <img class="arcade-right" src="https://i.ibb.co/sVzk7Rh/Arcade-Right.png" alt="Arcade-Right">
             </div>
             <div class="home__words">
                 <hgroup>
-                    <h3>INSERT <span>COINS ?</span></h3>
-                    <p>Inserisci la moneta per iniziare a giocare o prova il gettone bonus</p>
+                    <h3>Diventa un Digital Hero</h3>
+                    <p>Studia, pratica e scopri un mondo di opportunit&aacute; nel digitale. Inizia ora la tua
+                        avventura.</p>
                 </hgroup>
             </div>
         </section>
-        <div class="line-orange"></div>
-        
-        <!----------------- OurPlans ----------------->
-        <section class="plans">
-            <h1>OUR PLANS</h1>
-            <div class="plans__inside">
-                <h3>BASE</h3>
-                <h1>0€</h1>
-                <p>Videocorsi di alta qualità + quiz</p>
-                <button class="plans__button1">SIGN UP<img src="https://i.ibb.co/vmY38gX/Vector.png" alt="Vector"></button>
+        <div class="line-violet"></div>
+
+        <!----------------- Levels ----------------->
+        <!-- Level 1 -->
+        <h6 class="level__number">Level 1</h6>
+        <section class="level level_1">
+            <div class="level__left">
+                <hgroup>
+                    <h3 class="level__title">CHOOSE YOUR CHARACTER</h3>
+                    <p class="level__paragraph">Inizia il tuo cammino e definisci il tipo di eroe che vuoi diventare.
+                        Pensi di essere un mago del codice, un paladino del design o un guerriero del marketing?</p>
+                </hgroup>
             </div>
-            <div class="plans__inside">
-                <h3>PRO</h3>
-                <h1>50€</h1>
-                <p>Impara, pratica e scopri nuove opportunit&agrave;</p>
-                <button class="plans__button2">FREE TRIAL<img src="https://i.ibb.co/vmY38gX/Vector.png" alt="Vector"></button>
+            <div class="level__right level__right1">
+                <div class="level__images">
+                    <div class="character__inside">
+                        <img src="https://i.ibb.co/TRMtFMK/Developer.png" alt="Developer">
+                        <h6>Ready to play</h6>
+                    </div>
+                    <div class="character__inside">
+                        <img src="https://i.ibb.co/gyChvHg/Designer.png" alt="Designer">
+                        <h6>Coming soon</h6>
+                    </div>
+                    <div class="character__inside">
+                        <img src="https://i.ibb.co/FWn5hfn/Marketer.png" alt="Marketer">
+                        <h6>Coming soon</h6>
+                    </div>
+                </div>
             </div>
+            <div class="line-blue"></div>
         </section>
-
-        <!----------------- Learning ----------------->
-        <section class="information">
-            <h3>Apprendimento</h3>
-            <div class="information__type">
-                <p>BASE</p>
-                <p>PRO</p>
+        <!-- Level 2-->
+        <h6 class="level__number">Level 2</h6>
+        <section class="level level_2">
+            <div class="level__left">
+                <hgroup class="hgroup2">
+                    <h3 class="level__title">LEARNING SKILLS</h3>
+                    <p class="level__paragraph">Acquisisci le conoscenze necessarie per proseguire nel tuo cammino.
+                        Segui i video corsi, impara la teoria e preparati al prossimo livello.
+                    </p>
+                </hgroup>
             </div>
-            <div>
-                <div class="information__inside">
-                    <h6>Corsi Base</h6><span class="check">&#10004;</span><span class="check">&#10004;</span>
-                </div>
-                <div class="information__inside">
-                    <h6>Corsi Completi</h6><span class="cross">&#10006;</span><span class="check">&#10004;</span>
-                </div>
-                <div class="information__inside">
-                    <h6>Quiz</h6><span class="check">&#10004;</span><span class="check">&#10004;</span>
+            <div class="level__right level__right2">
+                <div class="level__images">
+                    <div class="img__inside">
+                        <img src="https://i.ibb.co/TRMtFMK/Developer.png" alt="Developer">
+                    </div>
+                    <div class="img__inside">
+                        <img src="https://i.ibb.co/DG2r3T4/Learning-Skills.png" alt="Learning-Skills">
+                    </div>
                 </div>
             </div>
+            <div class="line-pink"></div>
         </section>
-
-        <!----------------- Practice ----------------->
-        <section class="information">
-            <h3>Pratica</h3>
-            <div class="information__type">
-                <p>BASE</p>
-                <p>PRO</p>
+        <!-- Level 3-->
+        <h6 class="level__number">Level 3</h6>
+        <section class="level level_3">
+            <div class="level__left">
+                <hgroup class="hgroup2">
+                    <h3 class="level__title">LEVEL UP</h3>
+                    <p class="level__paragraph">Potenziati e sali di livello. Metti in pratica le skills che hai
+                        acquisito, con quiz e progetti reali. Verrai aiutato dagli esperti nel campo e dalla nostra
+                        community.
+                    </p>
+                </hgroup>
             </div>
-            <div>
-                <div class="information__inside">
-                    <h6>Consigli settimanali</h6><span class="check">&#10004;</span><span class="check">&#10004;</span>
-                </div>
-                <div class="information__inside">
-                    <h6>Progetti reali con correzioni</h6><span class="cross">&#10006;</span><span class="check">&#10004;</span>
-                </div>
-                <div class="information__inside">
-                    <h6>Accesso alla community</h6><span class="cross">&#10006;</span><span class="check">&#10004;</span>
-                </div>
-                <div class="information__inside">
-                    <h6>Certificato di completamento</h6><span class="cross">&#10006;</span><span class="check">&#10004;</span>
+            <div class="level__right level__right3">
+                <div class="level__images">
+                    <div class="img__inside">
+                        <img class="improveSkills" src="https://i.ibb.co/wNff5f6/Improve-Skills.png" alt="Improve-Skills">
+                    </div>
                 </div>
             </div>
+            <div class="line-teal"></div>
         </section>
-
-        <!----------------- Work ----------------->
-        <section class="information">
-            <h3>Lavoro</h3>
-            <div class="information__type">
-                <p>BASE</p>
-                <p>PRO</p>
+        <!-- Level 4-->
+        <h6 class="level__number">Level 4</h6>
+        <section class="level level_4">
+            <div class="level__left">
+                <hgroup class="hgroup2">
+                    <h3 class="level__title">FINAL ROUND</h3>
+                    <p class="level__paragraph">Sconfiggi il boss finale, il progetto che ti permetterà di completare il
+                        percorso.
+                        Ti metteremo in contatto con le nostre aziende partner, per confrontarti con mondo del lavoro.
+                    </p>
+                </hgroup>
             </div>
-            <div>
-                <div class="information__inside">
-                    <h6>Contatti con aziende partner</h6><span class="cross">&#10006;</span><span class="check">&#10004;</span>
-                </div>
-                <div class="information__inside">
-                    <h6>Networking tra studenti</h6><span class="cross">&#10006;</span><span class="check">&#10004;</span>
+            <div class="level__right level__right4">
+                <div class="level__images">
+                    <div class="terminal__inside">
+                        <img src="https://i.ibb.co/qRxMcDb/Final-Terminal.png" alt="Final-Terminal">
+                        <h6>Final Boss Terminal</h6>
+                    </div>
+                    <div class="terminal__inside">
+                        <img src="https://i.ibb.co/Jnfj9LF/Angry-Terminal.png" alt="Angry-Terminal">
+                        <h6>Terminal is <span class="terminal__angry">ANGRY</span></h6>
+                    </div>
+                    <div class="terminal__inside">
+                        <img src="https://i.ibb.co/mrsXVWH/Defeated-Terminal.png" alt="Defeated-Terminal">
+                        <h6>Terminal is <span class="terminal__defeated">DEFEATED</span></h6>
+                    </div>
                 </div>
             </div>
+            <div class="line-blue"></div>
         </section>
-
-        <!----------------- FAQ ----------------->
-
-        <section class="faq">
-            <div class="faq__top">
-                <h1>FAQ / Domande Frequenti</h1>
-                <div class="line-darkOrange"></div>
-            </div>
-            <div class="faq__inside">
-                <div class="faq__singleContainer">
-                    <h5>Devo saper programmare per cominciare il percorso?</h5>
-                    <p>No, il curriculum è stato creato per dare la possibilità a tutti di poter iniziare. Molti utenti hanno cominciato completamente da 0</p>
-                </div>
-                <div class="faq__singleContainer">
-                    <h5>Qual è la differenza tra il piano BASE e il piano PRO?</h5>
-                    <p>Il piano base offre una parte dei video corsi, con l’aggiunta dei quiz. Col piano PRO hai i video corsi completi e varie feature avanzate, come la correzione manuale dei tuoi progetti, acesso alla community, certificati e possibilità di trovare lavoro</p>
-                </div>
-                <div class="faq__singleContainer">
-                    <h5>Perchè un abbonamento?</h5>
-                    <p>I corsi non comprendono solamente i video, ma diamo un supporto costante tramite la nostra community e la correzione manuale dei progetti. Tramite un abbonamento mensile, siamo in grado di tenere il costo totale accessibile a tutti</p>
-                </div>
-                <div class="faq__singleContainer">
-                    <h5>Cos’è un percorso?</h5>
-                    <p>I percorsi sono dei curriculum che comprendono al loro interno diversi corsi. Sono stati creati per insegnare tutte le competenze necessarie per inserirsi in un campo, come lo sviluppo frontend</p>
-                </div>
+        <!----------------- Email ----------------->
+        <section class="email">
+            <h1>STAY FOCUSED</h1>
+            <div class="email__zone">
+                <h3>Inserisci l'e-mail per rimanere aggiornato.</h3>
+                <form class="email__form" action="">
+                    <input type="email" placeholder="e-mail">
+                    <button>Start<img src="https://i.ibb.co/vmY38gX/Vector.png" alt="Vector"></button>
+                </form>
             </div>
         </section>
     </main>
@@ -181,5 +1149,18 @@
             </div>
         </section>
     </footer>
+
+    <script>
+        document.querySelector(".open-links").addEventListener("click",function(){
+        document.querySelector(".overlay").style.height = "100%";
+        document.querySelector("body").style.overflow = "hidden";
+        });
+  
+        document.querySelector(".close-links").addEventListener("click",function(){
+        document.querySelector(".overlay").style.height = 0;
+        document.querySelector("body").style.overflow = "visible";
+        });
+    </script>
 </body>
+
 </html>
